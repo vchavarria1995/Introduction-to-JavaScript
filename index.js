@@ -56,10 +56,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+  return a * b;
   }
-
+console.log('task 1', multiply(12, 5))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -165,7 +165,7 @@ function game(user, computer){
   }else if( computer <= 3){
   computer= "scissors"
   }if (user === computer){
-   return "its a tie"
+   return "it's a tie"
   }else if (user === "rock" && computer === "paper"){   
   return "you lose!"
   }else if (user === "scissors" && computer === "rock"){
