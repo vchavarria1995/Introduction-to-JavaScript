@@ -18,10 +18,7 @@ Do the following:
    HINT: no function required
 */
 
-const votingAge = 21;
-  if(votingAge >= 18){
-  console.log('task 1', true);
-  }
+
 
 /*
 Task 1b - Values
@@ -34,9 +31,7 @@ Do the following:
    HINT: no function required
 */
 
-const x = 12;
-const y = 6;
-console.log('task 1', x+y)
+
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -154,9 +149,38 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+let computer = Math.random();
+  if(computer <= 0.34){
+    computer = 'rock';
+  }else if(computer <= 0.67){
+    computer = 'paper';
+  }else if(computer > 0.67){
+    computer = 'scissors';
+  }
 function game(user, computer){
-    /*add your code here*/
+  if (computer <= 1){
+  computer = "paper"
+  }else if( computer <= 2){
+  computer = "rock"
+  }else if( computer <= 3){
+  computer= "scissors"
+  }if (user === computer){
+   return "its a tie"
+  }else if (user === "rock" && computer === "paper"){   
+  return "you lose!"
+  }else if (user === "scissors" && computer === "rock"){
+   return "you lose!"
+  }else if (user === "paper" && computer === "scissors"){
+   return "you lose!"
+  }else if (user === "scissors" && computer === "paper"){
+   return "you win!"
+  }else if (user === "rock" && computer === "scissors"){
+   return "you win!"
+  }else if (user === "paper" && computer === "rock"){
+   return "you win!"
+  };
 }
+console.log('task 4', game('paper', computer));
   
   
 
