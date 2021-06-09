@@ -18,7 +18,10 @@ Do the following:
    HINT: no function required
 */
 
-
+const votingAge = 21;
+  if(votingAge >= 18){
+  console.log('task 1', true);
+  }
 
 /*
 Task 1b - Values
@@ -31,9 +34,9 @@ Do the following:
    HINT: no function required
 */
 
-
-
-
+const x = 12;
+const y = 6;
+console.log('task 1', x+y)
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -74,11 +77,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(humanYears){
+    return humanYears * 7
 }
-
-
+console.log('task 2', dogYears(25))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -169,9 +171,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(km){
+    return km * 0.621371;
   }
+console.log('task 5', miles(20))
 
 
 
@@ -183,11 +186,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(ft){
+    
   }
- 
-
+console.log('task 5', feet())
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
